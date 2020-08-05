@@ -1,0 +1,339 @@
+:root{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+
+/* VARIABLES */
+/* Polices */
+    /* Polices générales */
+    --police_texte:'Open Sans Condensed', sans-serif;
+    --police_titre: 'Quicksand', sans-serif;
+    /* Polices secondaires */
+
+/* Tailles layouts */
+    /* Padding général */
+    --padding_general:2rem;
+
+/* Couleurs */
+    /* principale */
+        --couleur_principale:#46AAF8;
+        --couleur_secondaire:#686868;
+    /* Secondaire */
+        --couleur_noir:black;
+        --couleur_blanche:white;
+    /* Tertiaire */
+
+/* Hauteurs polices */
+    /* H1 */
+    --h1_grand:8rem;
+    --h1_moyen:6rem;
+    --h1_petit:4rem;
+    /* H2 */
+    --h2_grand:3.5rem;
+    --h2_moyen:2.5rem;
+    --h2_petit:1.5rem;
+    /* Font */
+    --font_grand:1.4rem;
+    --font_moyen:1.2rem;
+    --font_petit:1rem;
+
+/* Transition */
+    /* vitesse */
+    --speed_lent:1s ease;
+    --speed_modere:500ms ease;
+    --speed_rapide:300ms ease;
+    /* type */
+        /* déplacement */
+    --transform_gauche:translateX(-8rem);
+    --transform_droite:translateX(8rem);
+    --transform_haut: translateY(-8rem);
+    --transform_bas:translateY(8rem);
+    --transform_diagonale-inf_gauche:translateX(-4rem) translateY(2rem);
+        /* zoom */
+    --zoom_petit:scale(1.1,1.1);
+    --zoom_moyen:scale(1.3,1.3);
+    --zoom_grand:scale(1.8,1.8);
+
+/* Images de style */
+    --image_style_fonce:url(../Images/texture_bois.jpg);
+    --image_style_claire:url(../Images/texture_bois_claire.jpg);
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* DISPOSITION */
+
+/* ----- PARTIE HAUTE ------ */
+.container_top{
+    background-image: url(../Images/texture_bois_claire.jpg);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}
+/* NAVBAR */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+}
+.navbar:hover{
+   background-color: rgba(204, 211, 233, 0.658);
+   transition: ease 0.5s;
+}
+
+.navbar_left{
+    margin-right: auto;
+    padding: 1rem;
+}
+.navbar_left img{
+    transition: var(--speed_rapide);
+}
+.navbar_left img:hover{
+    transform: var(--zoom_petit);
+    transition: var(--speed_rapide);
+}
+
+.navbar_right ul{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 1rem;
+}
+.navbar_right ul li{
+    margin: 0.5rem 3rem 0 3rem;
+    list-style: none;
+    font-size: 1.8rem;
+    transition: var(--speed_rapide);
+    text-shadow: white 0px 0px 4px;
+}
+.navbar_right ul li:hover{
+    transform: var(--zoom_petit);
+    transition: var(--speed_rapide);
+}
+
+.navbar_right ul li a{
+    text-decoration: none;
+    color: var(--couleur_secondaire);
+}
+.navbar_right ul #liste_me_contacter{
+    color: var(--couleur_principale);
+    border-radius: 0.6rem;
+    border-color: var(--couleur_principale);
+    border-width: 0.15rem;
+    border-style: solid;
+    padding: 0 1rem 0 1rem;
+    background-color: rgba(126, 126, 126, 0.308);
+    text-shadow: white 0px 0px 4px;
+}
+/* TEXTE DE BIENVENUE */
+.bienvenue{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 4rem;
+    padding-top:7.5rem;
+    width: 70rem;
+}
+
+.bienvenue h1{
+    color: var(--couleur_principale);
+    margin:0;
+    font-size: 4rem;
+    font-family: var(--police_titre);
+}
+.bienvenue p{
+    color: var(--couleur_secondaire);
+    margin-top: 0.2rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    font-family: var(--police_texte);
+    text-shadow: white 0px 0 4px;
+}
+.bienvenue_left{
+    display: flexbox;
+    margin-right: auto;
+    padding-right: 2rem;
+}
+.bienvenue_right{
+    display: flexbox;
+    margin: auto;
+    padding-left:2rem;
+}
+/* ----- PARTIE HAUTE ------ */
+
+/* Esthétique moderne blue*/
+.blueline{
+    width: 100%;
+    height: 0.15rem;
+    background-color: var(--couleur_principale);
+}
+.vide{
+    width: 100%;
+    height: 1rem;
+    background-color: none;
+}
+/* Esthétique moderne blue*/
+
+/* ----- PARTIE ETUDIANTE ----- */
+
+/* Titre */
+.container_corps_titre{
+    color: var(--couleur_principale);
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-family: var(--police_titre);
+    width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8rem;
+    display: flex;
+    flex-direction: row;
+}
+.container_corps_titre h2{
+    background-color: white;
+}
+/* les container_corps */
+.container_corps{
+    border-radius: 0.6rem;
+    border-color: var(--couleur_principale);
+    border-width: 0.15rem;
+    border-style: solid;
+    margin: -2.75rem auto 1rem auto;
+    width: 70rem;
+    display: flex;
+    flex-direction: row;
+}
+/* Partie gauche */
+.corps_left{
+    margin: auto;
+    padding-left: 3rem;
+}
+
+/* Partie droite */
+.corps_right{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin: auto;
+}
+.corps_right_column{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0 3rem 0;
+}
+
+/* partie gauche de la partie droite */
+.corps_right_column_left{
+    transform:rotate(-90deg) translateX(-10%);
+    transform-origin:1.6rem center;
+    font-family:var(--police_titre) ;
+    color: var(--couleur_secondaire);
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding-top:3rem;
+}
+/* partie centrale de la partie droite */
+/* general */
+.corps_right_column_center{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 0 1rem;
+    margin: auto;
+    width: 40rem;
+}
+/* intitulé */
+.description_titre{
+    font-family: var(--police_titre);
+    color: var(--couleur_principale);
+    font-size: 1.8rem;
+}
+/* desciptif */
+.description_texte{
+    font-family: var(--police_texte);
+    color: var(--couleur_secondaire);
+    font-size: 1.5rem;
+}
+/* endroit */
+.description_endroit{
+    font-family: var(--police_texte);
+    color: var(--couleur_secondaire);
+    display: flexbox;
+    font-style: italic;
+    margin-left: auto;
+    padding-right: 10%;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+}
+/* partie droite de la partie droite */
+.corps_right_column_right{
+    width: 5rem;
+    margin: auto;
+}
+.corps_right_column_right img{
+    transition:var(--speed_rapide);
+}
+.corps_right_column_right img:hover{
+    transform: var(--zoom_moyen);
+    transition: var(--speed_rapide);
+}
+
+/* ----- PARTIE ETUDIANTE/PROFESSIONNELLE ----- */
+
+/* ----- PARTIE DATA SCIENCE ----- */
+.texte_temporaire{
+    font-family: var(--police_titre);
+    font-size: 2rem;
+}
+/* ----- PARTIE DATA SCIENCE ----- */
+
+/* ----- PARTIE VOIR AUSSI ----- */
+.aussi_left{
+    margin: 2rem auto 2rem auto;
+    font-family: var(--police_titre);
+    color: var(--couleur_principale);
+    transition: var(--speed_rapide);
+}
+.aussi_left img{
+    transition: var(--speed_rapide);
+}
+.aussi_left img:hover{
+    transform: var(--zoom_moyen);
+    transition: var(--speed_rapide);
+}
+.aussi_right{
+    margin: 2rem auto 2rem auto;
+    font-family: var(--police_titre);
+    color: var(--couleur_principale);
+}
+.aussi_right img{
+    transition: var(--speed_rapide);
+}
+.aussi_right img:hover{
+    transform: var(--zoom_moyen);
+    transition: var(--speed_rapide);
+}
+/* ----- PARTIE VOIR AUSSI ----- */
+
+/* CREDIT */
+.credits{
+    display: flex;
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 1.5rem auto 0 auto;
+    color: var(--couleur_secondaire);
+    font-family: var(--police_titre);
+}
+.credits p{
+    margin-left: auto;
+    margin-right: auto;
+}
