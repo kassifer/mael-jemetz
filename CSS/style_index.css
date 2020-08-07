@@ -337,3 +337,71 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+/* __________________________________________________ */
+/*                    PAGE CONTACT                    */
+/* __________________________________________________ */
+
+/* Partie esthétique */
+
+
+.contenu{
+    padding-top: 10rem;
+    width: 70rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contenu_texte{
+    width: 100%;
+    text-align: center;
+}
+.contenu_texte h1{
+    color: var(--couleur_principale);
+    font-family: var(--police_titre);
+    font-size: 3.8rem;
+}
+.contenu_texte h3{
+    color: var(--couleur_secondaire);
+    font-family: var(--police_texte);
+    font-size: 2.8rem;
+}
+
+
+.contenu_icone{
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    transition: ease-in 1s;
+}
+.contenu_icone:hover{
+    width: 100%;
+    transition: ease-in 1000ms;
+}
+#defilement {
+    transform: rotate(-90deg);
+    transition: ease-in 800ms;
+}
+.contenu_icone:hover .contenu_reveal{
+    display: flex;
+    transition: ease-in 1000ms;
+    transform: rotate(-360deg);
+}
+
+.contenu_reveal{
+    display: none;
+    flex-direction: row;
+    margin: 0 2rem ;
+    transition: ease-in 1000ms;
+    transform: rotate(-360deg);
+}
+.reveal_content{
+    display: flex;
+    flex-direction: row;
+    margin: 0 2rem ;
+}
+.reveal_content h1{
+    color: var(--couleur_principale);
+    font-family: var(--police_titre);
+}
