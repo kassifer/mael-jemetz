@@ -292,7 +292,23 @@ body{
 /* ----- PARTIE DATA SCIENCE ----- */
 .texte_temporaire{
     font-family: var(--police_titre);
-    font-size: 2rem;
+    height: 100%;
+    display: block;
+}
+.texte_temporaire h2{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: var(--couleur_principale);
+}
+.texte_temporaire h3{
+    font-size: 1.5rem;
+    color: var(--couleur_principale);
+    padding-left: 2rem;
+}
+.texte_temporaire p{
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    text-align: justify;
 }
 /* ----- PARTIE DATA SCIENCE ----- */
 
