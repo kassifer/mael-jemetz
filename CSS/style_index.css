@@ -289,13 +289,14 @@ body{
 
 /* ----- PARTIE ETUDIANTE/PROFESSIONNELLE ----- */
 
-/* ----- PARTIE DATA SCIENCE ----- */
+/* ----- PARTIE DATA SCIENCE & infos ----- */
 .texte_temporaire{
     font-family: var(--police_titre);
     height: 100%;
     display: block;
 }
 .texte_temporaire h2{
+    margin-top: 3rem;
     font-size: 1.8rem;
     line-height: 2rem;
     color: var(--couleur_principale);
@@ -310,7 +311,7 @@ body{
     margin-bottom: 3rem;
     text-align: justify;
 }
-/* ----- PARTIE DATA SCIENCE ----- */
+/* ----- PARTIE DATA SCIENCE & infos----- */
 
 /* ----- PARTIE VOIR AUSSI ----- */
 .aussi_left{
